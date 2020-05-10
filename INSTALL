@@ -1,0 +1,42 @@
+# Inslallation
+
+## Prerequisites
+
+You should have installed autotools, g++, OpenGL libGL and libGLU,  and GLUT (freeglut).
+
+## Configuring
+
+Run configure with the default arguments for your system, for example on RHEL/Fedora that should look like:
+
+    ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
+
+On Debian derivates tis may look as this:
+
+    ./configure --prefix=/usr  --sysconfdir=/etc
+
+If you don't want to mess up your system and don't have anything special about the required libs and/or build platform, just run
+
+    ./configure
+
+This will happily place everything in /usr/local if you do  __make install__ afterwards
+
+Look at the configure output, it should contain lines
+
+    checking for sqrt... yes
+    checking for glPushMatrix... yes
+    checking for gluSphere... yes
+    checking for glutInit... yes
+
+If sometring's not here, you don't have all the required libraries installed
+
+## Building and installiation
+
+After the successful configuration just type
+
+    make
+
+And, if you want the aplication installed,
+
+    make install
+
+
