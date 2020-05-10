@@ -14,7 +14,7 @@ I have created this application on a prrof of qualification request.  Thus it wa
 * it has to work /near/ real-time on a decent workstation
 
 
-I'm providing the code to you in hope you'll find some use of it's compnnents or can use it as a case study of OpenGL,Computer Graphics,  MVC and general C++ programming.
+I'm providing the code to you in hope you'll find some use of it's componnents or can use it as a case study of OpenGL,Computer Graphics,  MVC and general C++ programming.
 
 # Inslallation
 
