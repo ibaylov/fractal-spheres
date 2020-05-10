@@ -2,6 +2,19 @@
 The application visualizes the SphereFlake fractal using OpenGL
 
 Proudly powered by GNU C/C++, GNU Autotools, VIM, Microsoft Code, QT Creator, Mercurial, Valgrind and Doxygen
+... and Git
+
+# What's the buzz
+
+I have created this application on a prrof of qualification request.  Thus it was made under some restrictions:
+
+* it was done in a week
+* it has to be portable
+* it has to use bare C++, no STL, no Boost
+* it has to work /near/ real-time on a decent workstation
+
+
+I'm providing the code to you in hope you'll find some use of it's compnnents or can use it as a case study of OpenGL,Computer Graphics,  MVC and general C++ programming.
 
 # Inslallation
 
@@ -81,14 +94,14 @@ Recreate the configure script by typing in
 
 # The documentation
 
-The documentation is extracted from source code comments by Doxugen. To recreate it install doxygen. 
+The documentation is extracted from source code comments by Doxygen. To recreate it install doxygen. 
 Once having doxygen installed run
 
     cd doc && doxygen
 
 # Running
 
-After the application is build type in
+After the application has been built type in
 
 	src/fractal-spheres
 or, if you have already installed it with __make install__, simply run
@@ -113,6 +126,7 @@ The user interface is keyboard-based with no special keys used. The key commnds 
     1 - Select gold model paint 
     2 - Select Pierot multi-color model paint
     3 - Select solver glass model paint
+    ESC - Exits the application
 
 __For convenience the Zoom FOV is restricted betwenn 9 and 90 degrees. This can be removed in viewport.cc__ 
 
