@@ -143,4 +143,4 @@ Happy hacking!
 ![More Gold](doc/screenshots/screen-2.png "More Gold")
 ![More Pierot](doc/screenshots/screen-4.png "More Pierotn")
 ![Even More Pierot](doc/screenshots/screen-5.png "Even More Pierotn")
-![Even More Gold](doc/screenshots/screen-0.png "Even More Gold")
+![Even More Gold](doc/screenshots/screen-10.png "Even More Gold")
