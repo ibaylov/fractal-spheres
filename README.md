@@ -1,7 +1,7 @@
 # The Application
 The application visualizes the SphereFlake fractal using OpenGL
 
-![welcome screenshot](Idoc/screenshots/screen-8.png "TThe application")
+![welcome screenshot](doc/screenshots/screen-8.png "TThe application")
 
 Proudly powered by GNU C/C++, GNU Autotools, VIM, Microsoft Code, QT Creator, Mercurial, Valgrind and Doxygen
 ... and Git
