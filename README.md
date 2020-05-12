@@ -65,17 +65,17 @@ And, if you want the aplication installed,
 
 The application has to be built with a  optimization level to perform smoothly. For GCC it will be -O3
 
-    CXFLAGS="-O3" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
+    CXXFLAGS="-O3" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
 
 The CXXFLAGS are not set by configure deliberately, so you can play with defines and profiling options
 
 ## For debugging
 
-    CXFLAGS="-O0 -ggdb -D_DEBUG_DUMP_" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
+    CXXFLAGS="-O0 -ggdb -D_DEBUG_DUMP_" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
 
 ## For profiling
 
-    CXFLAGS="-O0 -ggdb -pg" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
+    CXXFLAGS="-O0 -ggdb -pg" ./configure --prefix=/usr --libdir=/usr/lib64 --sysconfdir=/etc
 
 __Don't forget to `make clean` after each reconfiguration__
 
@@ -110,7 +110,7 @@ or, if you have already installed it with __make install__, simply run
 
 	fractal-spheres
 
-The user interface is keyboard-based with no special keys used. The key commnds are:
+The user interface is keyboard-based with no special keys used. The key commands are:
 
     a - Camera orbit left
     d - Camera orbit right
@@ -120,14 +120,14 @@ The user interface is keyboard-based with no special keys used. The key commnds 
     D - Camera yaw right
     W - Camera pitch up
     S - Camera pitch down
-    [ - Camera mowe forward
+    [ - Camera move forward
     ] - Camera move backward
     { - Camera zoom in
     } - Camera zoom out
     Space - reset the wiewport
     1 - Select gold model paint 
     2 - Select Pierot multi-color model paint
-    3 - Select solver glass model paint
+    3 - Select silver glass model paint
     ESC - Exits the application
 
 __For convenience the Zoom FOV is restricted betwenn 9 and 90 degrees. This can be removed in viewport.cc__ 
