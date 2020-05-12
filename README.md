@@ -134,3 +134,12 @@ __For convenience the Zoom FOV is restricted betwenn 9 and 90 degrees. This can 
 
 
 Happy hacking!
+
+# Some Screenshots
+
+
+![Pierot](doc/screenshots/screen-0.png "Pierot Skin")
+![Gold](doc/screenshots/screen-1.png "Gold Skin")
+![More Gold](doc/screenshots/screen-8.png "More Gold")
+![More Pierot](doc/screenshots/screen-4.png "More Pierotn")
+![Even More Gold](doc/screenshots/screen-0.png "Even More Gold")
