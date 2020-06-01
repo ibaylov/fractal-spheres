@@ -29,10 +29,10 @@ namespace geom
 
 /**
 @file geom.hh
-@brief We decalre here the base scalar type for geometry calculations and the geometry classes for 3D calculations
-Since we wil not use floats and doubles simultaneously, we dont use template but a definition instead
+@brief We declare here the base scalar type for geometry calculations and the geometry classes for 3D calculations
+Since we will not use floats and doubles simultaneously, we don't use template but a definition instead
 
-We use some lean c++  11 code to speeed  up thiings where possible, but this can be disabled
+We use some lean c++  11 code to speed  up things where possible, but this can be disabled
 
 @note Compilation control macros:
 
@@ -70,7 +70,7 @@ enum Axis
 //////////////////////////////////////////////////
 /// \brief The cTuple3d class
 /// We encapsulate the base functionality for homogeneous coordinates calculations here
-/// We derive then the cPoint3d and cVector3d to restrict specific operations, e.g nt allowing point * point
+/// We derive then the cPoint3d and cVector3d to restrict specific operations, e.g not allowing point * point
 
 class cTuple3d
 {
@@ -82,7 +82,7 @@ class cTuple3d
     public:
 
 
-        cTuple3d( ); //!< default constructor, zeroes the duqdruple
+        cTuple3d( ); //!< default constructor, zeroes the quadruple
         cTuple3d( scalar, scalar, scalar, scalar ); //!< four scalars constructor
         cTuple3d( const  cTuple3d& );               //!< copy constructor
         #ifndef _NO_CXX_11_
@@ -136,21 +136,21 @@ class cMatrix3d
     protected:
         /////////////////////////////////////////////////
         /// \brief m_vecMartixRows - the matrix values
-        /// we use row-vector impementation since our clculations assume row-major form
-        /// also this may be benefical if DSP/SIMD product is implemented on quples
+        /// we use row-vector implementation since our clculations assume row-major form
+        /// also this may be beneficial if DSP/SIMD product is implemented on tuples
         cTuple3d m_vecMartixRows[ gnDim3d ];
     public:
         cMatrix3d( );   //!< default constructor, loads identity
         cMatrix3d( const  cMatrix3d& ); //!< copy constructor
         #ifndef _NO_CXX_11_
-        cMatrix3d( cMatrix3d&& ); // again, there's no actual benefits from this rigt now
+        cMatrix3d( cMatrix3d&& ); // again, there's no actual benefits from this right now
         #endif
         cMatrix3d( scalar, scalar, scalar, scalar,
                    scalar, scalar, scalar, scalar,
                    scalar, scalar, scalar, scalar,
                    scalar, scalar, scalar, scalar ); //<! direct row-major initialization
 
-        const cMatrix3d& operator = ( const  cMatrix3d& ); //!< assignemt operator
+        const cMatrix3d& operator = ( const  cMatrix3d& ); //!< assignment operator
         ~cMatrix3d(); // again, we don't have virtual methods here so no virtual destructor
 
         const cTuple3d& operator [] ( size_t nPos) const; //!< Read-only row access 
@@ -170,11 +170,11 @@ class cMatrix3d
 
 //////////////////////////////////////////////////
 /// \brief The cPoint3d class
-/// We defive this from the tuple to restrict functionality to points-only valid operations
+/// We derive this from the tuple to restrict functionality to points-only valid operations
 class cPoint3d : public cTuple3d
 {
     public:
-        cPoint3d(  );                //!< default, makes a finite point by settinh W to 1.0
+        cPoint3d(  );                //!< default, makes a finite point by setting W to 1.0
         cPoint3d( const cTuple3d& ); //!< copy
         #ifndef _NO_CXX_11_
         cPoint3d( cTuple3d&& );      //!< rvalue
@@ -192,7 +192,7 @@ class cPoint3d : public cTuple3d
 class cVector3d : public cTuple3d
 {
     public:
-        cVector3d(  );                  //!< , makes an infinite point by settinh W to 0.0
+        cVector3d(  );                  //!< , makes an infinite point by setting W to 0.0
         cVector3d( const cTuple3d& );   //!< copy
         #ifndef _NO_CXX_11_
         cVector3d(cTuple3d&& );         //!< value
@@ -221,7 +221,7 @@ class cPlane3d
         cPlane3d( const cPoint3d& , const cPoint3d&, const cPoint3d&  ); //!< Three point definition
         cPlane3d( scalar, scalar, scalar, scalar );                      //!< Normal equation definition 
 
-        scalar   PointDistance( const cPoint3d& ); //!< Euclidean norm. Returns positive if point is on the sode normal vector points to, ~= 0 on plane, negative o.w.
+        scalar   PointDistance( const cPoint3d& ); //!< Euclidean norm. Returns positive if point is on the side normal vector points to, ~= 0 on plane, negative o.w.
         cPoint3d ProjectPoint( const cPoint3d& ); //!< Projects the argument onto plane
 
         ~cPlane3d(); //!< destructor, not virtual
