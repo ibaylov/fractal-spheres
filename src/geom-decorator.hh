@@ -28,7 +28,7 @@
 
 /**
 @file geom-decorator.hh
-@brief Decorators add the specific operations to geomety objects without adding methods to them
+@brief Decorators add the specific operations to geometry objects without adding methods to them
 */
 
 namespace geom
@@ -61,7 +61,7 @@ namespace geom
         scalar RadiansToScalar( scalar sRads,  AngleUnit unitOut );
 
         /////////////////////////////////////////////////
-        /// \brief LoadRotation - loads the argiment matrix with an orthogonal matrix of rotation against WCS axis
+        /// \brief LoadRotation - loads the argument matrix with an orthogonal matrix of rotation against WCS axis
         /// \param matArg       - the matrix to be loaded
         /// \param axisRotate   - the WCS axis of rotation
         /// \param sAngle       - the angle value
@@ -70,7 +70,7 @@ namespace geom
         void LoadRotation( cMatrix3d& matArg , Axis axisRotate, scalar sAngle, AngleUnit unitAngle );
 
         /////////////////////////////////////////////////
-        /// \brief LoadRotation - loads the argiment matrix with an orthogonal matrix of rotation against arbitrary axis
+        /// \brief LoadRotation - loads the argument matrix with an orthogonal matrix of rotation against arbitrary axis
         /// \param matArg       - the matrix to be loaded
         /// \param axisRotate   - the axis vector
         /// \param sAngle       - the angle value
@@ -86,9 +86,9 @@ namespace geom
         void LoadTranslation( cMatrix3d& matArg , const cVector3d& vacTranslate );
 
         /////////////////////////////////////////////////
-        /// \brief LoadScale       - loads a dillatation operator into the argument matrix
+        /// \brief LoadScale       - loads a dilatation operator into the argument matrix
         /// \param matArg          - the matrix to be loaded
-        /// \param vacScale        - the dillatation values
+        /// \param vacScale        - the dilatation values
         ///
         void LoadScale( cMatrix3d& matArg, const cVector3d& vecScale );
 
@@ -107,7 +107,7 @@ namespace geom
         void ImportOGLMatrix(  cMatrix3d& matIn , const scalar* psOGL ); //!< Import from  OpenGL matrix
 
         /////////////////////////////////////////////////
-        /// \brief ElementSumMul   - calculates per-element sum of two tuples, weoghted by scalar coefficients
+        /// \brief ElementSumMul   - calculates per-element sum of two tuples, weighted by scalar coefficients
         /// \param tupleA          - the first tuple
         /// \param sCoefA          - the first tuple coefficient
         /// \param tupleB          - the second tuple

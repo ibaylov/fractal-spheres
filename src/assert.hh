@@ -27,8 +27,8 @@
 /**
 @file assert.hh
 @brief We want a debug supprt that vanishes completely in release
-The graphisc is not a place for lingering debug code or unwize use of c++ exceptions, so we redefine
-_ASSERT to be a macro over assert just to be sure it is excluded regardles of the actual assert implementation
+The graphics is not a place for lingering debug code or unwise use of c++ exceptions, so we redefine
+_ASSERT to be a macro over assert just to be sure it is excluded regardless of the actual assert implementation
 */
 
 #ifdef _DEBUG_DUMP_
