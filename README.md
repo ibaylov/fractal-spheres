@@ -34,7 +34,7 @@ On Debian derivates tis may look as this:
 
     ./configure --prefix=/usr  --sysconfdir=/etc
 
-If you don't want to mess up your system and don't have anything special about the required libs and/or build platform, just run
+If you don't want to mess up your system and don't have anything special about the required libs and/or build platform, just invoke
 
     ./configure
 
