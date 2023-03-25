@@ -6,7 +6,11 @@ The application visualizes the SphereFlake fractal using OpenGL
 Proudly powered by GNU C/C++, GNU Autotools, VIM, Microsoft Code, QT Creator, Mercurial, Valgrind and Doxygen
 ... and Git
 
-# What's the buzz
+# Your feedback matters
+
+I provide this code to you in hope you'll find it useful without seeking any profit or other benefits. So if you find it useful please drop a comment or hit the star button above.
+
+# What's all about
 
 I have created this application on a prrof of qualification request.  Thus it was made under some restrictions:
 
