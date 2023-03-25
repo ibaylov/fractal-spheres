@@ -12,7 +12,7 @@ I provide this code to you in hope you'll find it useful without seeking any pro
 
 # What's all about
 
-I have created this application on a prrof of qualification request.  Thus it was made under some restrictions:
+I have created this application on a proof of qualification request.  Thus it was made under some restrictions:
 
 * it was done in a week
 * it has to be portable
